@@ -1,7 +1,5 @@
-// Footer.js
-
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const FooterContainer = styled.footer`
   background-color: #ffffff;
@@ -35,7 +33,7 @@ const SocialMedia = styled.div`
   }
 
   ul li a:hover {
-    color: #E81393;
+    color: #e81393;
   }
 `;
 
@@ -46,9 +44,21 @@ const Footer = () => {
         <p>&copy; 2024 Heart, California</p>
         <SocialMedia>
           <ul>
-            <li><a href="#" aria-label="Link to facebook"><i className="fab fa-facebook"></i></a></li>
-            <li><a href="#" aria-label="Link to instagram"><i className="fab fa-instagram"></i></a></li>
-            <li><a href="#"aria-label="Link to twitter"><i className="fab fa-twitter"></i></a></li>
+            <li>
+              <a href="#" aria-label="Link to facebook">
+                <i className="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Link to instagram">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Link to twitter">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
           </ul>
         </SocialMedia>
       </div>

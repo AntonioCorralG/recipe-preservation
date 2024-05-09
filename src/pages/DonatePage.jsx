@@ -67,7 +67,6 @@ const DonateButton = styled.button`
   cursor: pointer;
   font-size: 16px;
   font-weight: bold;
-  transition: all 0.2s ease-in-out;
   width: 100%;
   margin: 1em 0;
 
@@ -120,7 +119,9 @@ const DonatePage = () => {
         <h1 className="title">
           <i className="fa-brands fa-gratipay"></i> Support our Mission
         </h1>
-        <p>Food is culture and heritage. Help us preserve it's roots and history.</p>
+        <p>
+          Food is culture and heritage. Help us preserve it's roots and history.
+        </p>
         <div className="donate-container">
           <DonateImage>
             <img
@@ -160,7 +161,9 @@ const DonatePage = () => {
         <DonateModal showModal={showModal}>
           <CloseButton onClick={closeModal}>X</CloseButton>
           <h2>Thank You for Your Donation!</h2>
-          <ThankYouMessage>Your support is greatly appreciated.</ThankYouMessage>
+          <ThankYouMessage>
+            Your support is greatly appreciated.
+          </ThankYouMessage>
         </DonateModal>
       </Container>
       <Footer />

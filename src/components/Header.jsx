@@ -1,7 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Logo from '../Assets/images/h2hlogo.png';
+import React from "react";
+import styled from "styled-components";
+import Logo from "../Assets/images/h2hlogo.png";
 
 const HeaderContainer = styled.header`
   background-color: #f1f1f1;
@@ -42,7 +41,7 @@ const Nav = styled.nav`
   }
 
   ul li a:active {
-    background-color:  #e81393;
+    background-color: #e81393;
     color: white;
   }
 `;
@@ -54,15 +53,27 @@ const LogoImg = styled.img`
 const Header = () => {
   return (
     <HeaderContainer>
-      <LogoImg src={Logo} alt="logo for website heart to hearth"/>
+      <LogoImg src={Logo} alt="logo for website heart to hearth" />
       <Nav>
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/contribute">Contribute</a></li>
-          <li><a href="/history">History</a></li>
-          <li><a href="/store">Store</a></li>
-          <li><a href="/donate">Donate</a></li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/contribute">Contribute</a>
+          </li>
+          <li>
+            <a href="/history">History</a>
+          </li>
+          <li>
+            <a href="/store">Store</a>
+          </li>
+          <li>
+            <a href="/donate">Donate</a>
+          </li>
         </ul>
       </Nav>
     </HeaderContainer>

@@ -54,8 +54,8 @@ const CloseButton = styled.span`
 
 const RecipeImage = styled.img`
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover; /* Maintain aspect ratio */
+  height: 200px;
+  object-fit: cover;
 `;
 
 const LikeButton = styled.button`
