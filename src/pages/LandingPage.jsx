@@ -65,11 +65,11 @@ const LikeButton = styled.button`
 `;
 
 const RecipeHeadings = styled.h3`
-text-align: left !important;
-`
+  text-align: left !important;
+`;
 const IngredientsList = styled.li`
-text-align: left !important;
-`
+  text-align: left !important;
+`;
 
 const LandingPage = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -132,7 +132,8 @@ const LandingPage = () => {
                       ? "#ff69b4"
                       : "inherit",
                   }}
-                /><p>Favorite</p>
+                />
+                <p>Favorite</p>
               </LikeButton>
             </RecipeCard>
           ))}
@@ -159,9 +160,7 @@ const LandingPage = () => {
                 liked={likedRecipes.includes(selectedRecipe.title)}
                 onClick={() => toggleLikeButton(selectedRecipe)}
               >
-                {likedRecipes.includes(selectedRecipe.title)
-                  ? "Favorited"
-                  : ""}
+                {likedRecipes.includes(selectedRecipe.title) ? "Favorited" : ""}
               </LikeButton>
             </>
           )}
