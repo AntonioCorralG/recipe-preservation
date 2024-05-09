@@ -55,8 +55,8 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" aria-label="Link to twitter">
-                <i className="fab fa-twitter"></i>
+              <a href="#" aria-label="Link to X">
+                <i className="fab fa-x-twitter"></i>
               </a>
             </li>
           </ul>
