@@ -29,7 +29,6 @@ const SocialMedia = styled.div`
     text-decoration: none;
     color: #e85d13;
     font-size: 1.5em;
-    transition: color 0.3s ease;
   }
 
   ul li a:hover {
