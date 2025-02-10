@@ -50,30 +50,31 @@ const LogoImg = styled.img`
   height: 75px;
 `;
 
-const Header = () => {
+interface NavItem {
+  path: string;
+  label: string;
+}
+
+const navItems: NavItem[] = [
+  { path: "/", label: "Home" },
+  { path: "/blog", label: "Blog" },
+  { path: "/contribute", label: "Contribute" },
+  { path: "/history", label: "History" },
+  { path: "/store", label: "Store" },
+  { path: "/donate", label: "Donate" },
+];
+
+const Header: React.FC = () => {
   return (
     <HeaderContainer>
       <LogoImg src={Logo} alt="logo for website heart to hearth" />
       <Nav>
         <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/contribute">Contribute</a>
-          </li>
-          <li>
-            <a href="/history">History</a>
-          </li>
-          <li>
-            <a href="/store">Store</a>
-          </li>
-          <li>
-            <a href="/donate">Donate</a>
-          </li>
+          {navItems.map((item) => (
+            <li key={item.path}>
+              <a href={item.path}>{item.label}</a>
+            </li>
+          ))}
         </ul>
       </Nav>
     </HeaderContainer>

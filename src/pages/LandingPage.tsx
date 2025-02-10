@@ -3,6 +3,12 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import styled from "styled-components";
 import { recipes } from "../data/recipes";
+import { Recipe } from "../types";
+
+interface StyledProps {
+  showModal?: boolean;
+  liked?: boolean;
+}
 
 const Container = styled.div`
   max-width: 1200px;
@@ -34,7 +40,7 @@ const RecipeDescription = styled.p`
   margin-bottom: 0.5rem;
 `;
 
-const RecipeModal = styled.div`
+const RecipeModal = styled.div<StyledProps>`
   display: ${({ showModal }) => (showModal ? "block" : "none")};
   position: fixed;
   top: 50%;
@@ -58,7 +64,7 @@ const RecipeImage = styled.img`
   object-fit: cover;
 `;
 
-const LikeButton = styled.button`
+const LikeButton = styled.button<StyledProps>`
   border: none;
   padding: 0;
   cursor: pointer;
@@ -67,14 +73,15 @@ const LikeButton = styled.button`
 const RecipeHeadings = styled.h3`
   text-align: left !important;
 `;
+
 const IngredientsList = styled.li`
   text-align: left !important;
 `;
 
-const LandingPage = () => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedRecipe, setSelectedRecipe] = useState(null);
-  const [likedRecipes, setLikedRecipes] = useState(() => {
+const LandingPage: React.FC = () => {
+  const [modalVisible, setModalVisible] = useState<boolean>(false);
+  const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
+  const [likedRecipes, setLikedRecipes] = useState<string[]>(() => {
     const likedRecipesFromStorage = sessionStorage.getItem("likedRecipes");
     return likedRecipesFromStorage ? JSON.parse(likedRecipesFromStorage) : [];
   });
@@ -83,16 +90,16 @@ const LandingPage = () => {
     sessionStorage.setItem("likedRecipes", JSON.stringify(likedRecipes));
   }, [likedRecipes]);
 
-  const openModal = (recipe) => {
+  const openModal = (recipe: Recipe): void => {
     setSelectedRecipe(recipe);
     setModalVisible(true);
   };
 
-  const closeModal = () => {
+  const closeModal = (): void => {
     setModalVisible(false);
   };
 
-  const toggleLikeButton = (recipe) => {
+  const toggleLikeButton = (recipe: Recipe): void => {
     if (likedRecipes.includes(recipe.title)) {
       setLikedRecipes(likedRecipes.filter((title) => title !== recipe.title));
     } else {
