@@ -94,3 +94,6 @@ recipe-preservation/
    ```
    npm test
    ```
+
+   <img width="1512" alt="image" src="https://github.com/user-attachments/assets/a0fac785-d741-41ca-85ab-d93834e22a67" />
+
