@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Recipe Preservation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern web application dedicated to preserving and sharing traditional recipes, culinary history, and food culture.
 
-## Available Scripts
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technology Stack](#technology-stack)
+- [Project Structure](#project-structure)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-In the project directory, you can run:
+## Overview
+Recipe Preservation is a platform designed to document, preserve, and share traditional recipes and culinary history. The project aims to create a digital archive of food heritage, allowing users to explore recipes, learn about food history, contribute their own recipes, and support preservation efforts.
 
-### `npm start`
+## Features
+- **Recipe Archive**: Browse and search through a collection of preserved recipes
+- **Blog Section**: Articles and posts about food history and culinary traditions
+- **Contribution System**: Allow users to submit their own traditional recipes
+- **History Timeline**: Explore the history of food preservation and culinary traditions
+- **Online Store**: Purchase related products or support the preservation effort
+- **Donation Platform**: Support the recipe preservation initiative
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technology Stack
+- **Frontend Framework**: React.js with TypeScript
+- **Routing**: React Router v6
+- **Styling**: Styled Components
+- **Icons**: Font Awesome
+- **Testing**: Jest and React Testing Library
+- **Package Manager**: npm
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
+```
+recipe-preservation/
+├── public/                  # Public assets and HTML template
+├── src/                     # Source code
+│   ├── Assets/              # Images and static assets
+│   ├── components/          # Reusable UI components
+│   │   ├── Footer.tsx       # Site footer component
+│   │   ├── Header.tsx       # Site header/navigation component
+│   │   └── RecipeCard.jsx   # Recipe display component
+│   ├── data/                # Data files
+│   │   ├── blogPosts.ts     # Blog content
+│   │   ├── history.ts       # Historical information
+│   │   ├── products.ts      # Store products
+│   │   └── recipes.js       # Recipe collection
+│   ├── pages/               # Page components
+│   │   ├── BlogPage.tsx     # Blog section
+│   │   ├── ContributePage.jsx # Recipe contribution page
+│   │   ├── DonatePage.jsx   # Donation page
+│   │   ├── HistoryPage.tsx  # Food history page
+│   │   ├── LandingPage.tsx  # Homepage
+│   │   └── StorePage.tsx    # Product store page
+│   ├── styles/              # Global styles and theme configuration
+│   ├── types/               # TypeScript type definitions
+│   ├── App.tsx              # Main application component with routing
+│   └── index.js             # Application entry point
+├── package.json             # Project dependencies and scripts
+└── tsconfig.json            # TypeScript configuration
+```
 
-### `npm test`
+## Prerequisites
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
+1. Clone the repository:
+   ```
+   git clone https://github.com/yourusername/recipe-preservation.git
+   cd recipe-preservation
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
+1. Start the development server:
+   ```
+   npm start
+   ```
+   This will launch the application at [http://localhost:3000](http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Build for production:
+   ```
+   npm run build
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. Run tests:
+   ```
+   npm test
+   ```
