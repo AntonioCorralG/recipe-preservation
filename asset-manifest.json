@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/recipe-preservation/static/css/main.3322322d.css",
-    "main.js": "/recipe-preservation/static/js/main.ac89963b.js",
+    "main.js": "/recipe-preservation/static/js/main.526fba2c.js",
     "static/js/453.a6ab6a88.chunk.js": "/recipe-preservation/static/js/453.a6ab6a88.chunk.js",
     "static/media/arroz-leche.jpg": "/recipe-preservation/static/media/arroz-leche.3c3eeb5d6d189f9593aa.jpg",
     "static/media/tacos.jpg": "/recipe-preservation/static/media/tacos.0f29b8d1bdca4891b155.jpg",
@@ -25,11 +25,11 @@
     "static/media/fa-v4compatibility.woff2": "/recipe-preservation/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/recipe-preservation/index.html",
     "main.3322322d.css.map": "/recipe-preservation/static/css/main.3322322d.css.map",
-    "main.ac89963b.js.map": "/recipe-preservation/static/js/main.ac89963b.js.map",
+    "main.526fba2c.js.map": "/recipe-preservation/static/js/main.526fba2c.js.map",
     "453.a6ab6a88.chunk.js.map": "/recipe-preservation/static/js/453.a6ab6a88.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3322322d.css",
-    "static/js/main.ac89963b.js"
+    "static/js/main.526fba2c.js"
   ]
 }
