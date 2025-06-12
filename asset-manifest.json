@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/recipe-preservation/static/css/main.3322322d.css",
+    "main.js": "/recipe-preservation/static/js/main.ac89963b.js",
+    "static/js/453.a6ab6a88.chunk.js": "/recipe-preservation/static/js/453.a6ab6a88.chunk.js",
+    "static/media/arroz-leche.jpg": "/recipe-preservation/static/media/arroz-leche.3c3eeb5d6d189f9593aa.jpg",
+    "static/media/tacos.jpg": "/recipe-preservation/static/media/tacos.0f29b8d1bdca4891b155.jpg",
+    "static/media/capi.jpg": "/recipe-preservation/static/media/capi.2f772bb7b9df80bebda2.jpg",
+    "static/media/bunelos.jpg": "/recipe-preservation/static/media/bunelos.643fc2e81f3974d57109.jpg",
+    "static/media/donation-image.jpg": "/recipe-preservation/static/media/donation-image.6eb7c251288e461e0b67.jpg",
+    "static/media/enchiladas.jpg": "/recipe-preservation/static/media/enchiladas.dad1ea18744326e0775b.jpg",
+    "static/media/pexels-rajesh-tp-749235-1633525.jpg": "/recipe-preservation/static/media/pexels-rajesh-tp-749235-1633525.53405784848c904fdd3d.jpg",
+    "static/media/blue-corn-tortilla.jpg": "/recipe-preservation/static/media/blue-corn-tortilla.a3ec79d47d23f7ecc15a.jpg",
+    "static/media/corn-in-a-cup.jpg": "/recipe-preservation/static/media/corn-in-a-cup.3e36e618a7f1c15c6921.jpg",
+    "static/media/burritos.jpg": "/recipe-preservation/static/media/burritos.22a878d53cc3f2a6d6b3.jpg",
+    "static/media/horchata.jpg": "/recipe-preservation/static/media/horchata.12cc7bd9e22674896b5d.jpg",
+    "static/media/fa-solid-900.ttf": "/recipe-preservation/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/ceviche.jpg": "/recipe-preservation/static/media/ceviche.4a48a17264609a05a2b8.jpg",
+    "static/media/fa-brands-400.ttf": "/recipe-preservation/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/recipe-preservation/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/recipe-preservation/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/fa-regular-400.ttf": "/recipe-preservation/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fa-regular-400.woff2": "/recipe-preservation/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/fa-v4compatibility.ttf": "/recipe-preservation/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/recipe-preservation/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "index.html": "/recipe-preservation/index.html",
+    "main.3322322d.css.map": "/recipe-preservation/static/css/main.3322322d.css.map",
+    "main.ac89963b.js.map": "/recipe-preservation/static/js/main.ac89963b.js.map",
+    "453.a6ab6a88.chunk.js.map": "/recipe-preservation/static/js/453.a6ab6a88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3322322d.css",
+    "static/js/main.ac89963b.js"
+  ]
+}
