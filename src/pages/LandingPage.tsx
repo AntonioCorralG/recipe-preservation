@@ -6,8 +6,8 @@ import { recipes } from "../data/recipes";
 import { Recipe } from "../types";
 
 interface StyledProps {
-  showModal?: boolean;
-  liked?: boolean;
+  $showModal?: boolean;
+  $liked?: boolean;
 }
 
 const Container = styled.div`
@@ -41,7 +41,7 @@ const RecipeDescription = styled.p`
 `;
 
 const RecipeModal = styled.div<StyledProps>`
-  display: ${({ showModal }) => (showModal ? "block" : "none")};
+  display: ${({ $showModal }) => ($showModal ? "block" : "none")};
   position: fixed;
   top: 50%;
   left: 50%;
@@ -122,7 +122,7 @@ const LandingPage: React.FC = () => {
               <RecipeTitle>{recipe.title}</RecipeTitle>
               <RecipeDescription>{recipe.description}</RecipeDescription>
               <LikeButton
-                liked={likedRecipes.includes(recipe.title)}
+                $liked={likedRecipes.includes(recipe.title)}
                 onClick={(e) => {
                   e.stopPropagation();
                   toggleLikeButton(recipe);
@@ -145,7 +145,7 @@ const LandingPage: React.FC = () => {
             </RecipeCard>
           ))}
         </RecipeContainer>
-        <RecipeModal showModal={modalVisible}>
+        <RecipeModal $showModal={modalVisible}>
           <CloseButton onClick={closeModal}>X</CloseButton>
           {selectedRecipe && (
             <>
@@ -164,7 +164,7 @@ const LandingPage: React.FC = () => {
               <p>{selectedRecipe.instructions}</p>
               <p>{selectedRecipe.source}</p>
               <LikeButton
-                liked={likedRecipes.includes(selectedRecipe.title)}
+                $liked={likedRecipes.includes(selectedRecipe.title)}
                 onClick={() => toggleLikeButton(selectedRecipe)}
               >
                 {likedRecipes.includes(selectedRecipe.title) ? "Favorited" : ""}
